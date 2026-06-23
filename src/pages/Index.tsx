@@ -257,11 +257,14 @@ const Index = () => {
               Есть вопросы по заказу или товару? Напишите нам — ответим быстро.
             </p>
             <div className="space-y-3">
+              <a href={`tel:${SHOP_CONFIG.phone.replace(/\s/g, '')}`} className="flex items-center gap-3 hover:text-primary transition-colors">
+                <Icon name="Phone" size={20} /> {SHOP_CONFIG.phone}
+              </a>
               <a href={`https://wa.me/${SHOP_CONFIG.whatsappNumber}`} target="_blank" rel="noreferrer" className="flex items-center gap-3 hover:text-primary transition-colors">
                 <Icon name="MessageCircle" size={20} /> WhatsApp для заказов
               </a>
               <p className="flex items-center gap-3">
-                <Icon name="MapPin" size={20} /> {SHOP_CONFIG.city}
+                <Icon name="MapPin" size={20} /> {SHOP_CONFIG.address}
               </p>
               <p className="flex items-center gap-3">
                 <Icon name="CreditCard" size={20} /> Оплата: Dushanbe City {SHOP_CONFIG.dushanbeCityNumber}
@@ -282,8 +285,31 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="container px-4 py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} {SHOP_CONFIG.shopName}. Все права защищены.
+      <footer className="border-t border-border bg-background">
+        <div className="container px-4 py-10 grid gap-6 md:grid-cols-3 text-sm">
+          <div>
+            <p className="font-display text-2xl font-700 text-primary mb-2">{SHOP_CONFIG.shopName}</p>
+            <p className="text-muted-foreground">Современный магазин одежды, аксессуаров и часов.</p>
+          </div>
+          <div className="space-y-2 text-muted-foreground">
+            <p className="flex items-center gap-2">
+              <Icon name="MapPin" size={16} /> {SHOP_CONFIG.address}
+            </p>
+            <a href={`tel:${SHOP_CONFIG.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Icon name="Phone" size={16} /> {SHOP_CONFIG.phone}
+            </a>
+            <a href={`https://wa.me/${SHOP_CONFIG.whatsappNumber}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <Icon name="MessageCircle" size={16} /> WhatsApp
+            </a>
+          </div>
+          <div className="flex flex-col gap-2">
+            <button onClick={() => scrollTo('catalog')} className="text-left text-muted-foreground hover:text-primary transition-colors">Каталог</button>
+            <button onClick={() => scrollTo('contacts')} className="text-left text-muted-foreground hover:text-primary transition-colors">Контакты</button>
+          </div>
+        </div>
+        <div className="border-t border-border py-5 text-center text-xs text-muted-foreground">
+          © {new Date().getFullYear()} {SHOP_CONFIG.shopName}. Все права защищены.
+        </div>
       </footer>
     </div>
   );

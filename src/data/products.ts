@@ -73,7 +73,9 @@ export const products: Product[] = [
 // ============================================================
 export const SHOP_CONFIG = {
   dushanbeCityNumber: '+992 00 000 0000', // ← укажите свой номер Dushanbe City
-  whatsappNumber: '992000000000', // ← номер WhatsApp без + и пробелов
+  whatsappNumber: '992929221515', // ← номер WhatsApp без + и пробелов
+  phone: '+992 92 922 15 15',
   shopName: 'Сабури Мол',
-  city: 'Душанбе',
+  city: 'Таджикистан, район Мастчох',
+  address: 'Таджикистан, район Мастчох',
 };
