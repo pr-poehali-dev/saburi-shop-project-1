@@ -4,34 +4,35 @@
 
 @layer base {
   :root {
-    --background: 36 40% 97%;
-    --foreground: 240 10% 10%;
+    /* WB/Ozon style — светлый фон, фиолетовый акцент */
+    --background: 240 6% 96%;
+    --foreground: 240 15% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 10%;
+    --card-foreground: 240 15% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 10%;
+    --popover-foreground: 240 15% 9%;
 
-    /* Teal — бренд-цвет Saburi Kids */
-    --primary: 174 62% 35%;
+    /* Фиолетовый — Wildberries */
+    --primary: 271 76% 53%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 36 30% 93%;
-    --secondary-foreground: 240 10% 15%;
+    --secondary: 240 5% 93%;
+    --secondary-foreground: 240 15% 20%;
 
-    --muted: 36 20% 90%;
+    --muted: 240 5% 90%;
     --muted-foreground: 240 5% 46%;
 
-    --accent: 36 80% 92%;
-    --accent-foreground: 174 62% 28%;
+    --accent: 271 76% 96%;
+    --accent-foreground: 271 76% 45%;
 
-    --destructive: 0 72% 51%;
+    --destructive: 0 84% 55%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 36 15% 86%;
-    --input: 36 15% 86%;
-    --ring: 174 62% 35%;
+    --border: 240 6% 88%;
+    --input: 240 6% 88%;
+    --ring: 271 76% 53%;
 
     --radius: 0.5rem;
 
@@ -52,7 +53,7 @@
     --card-foreground: 0 0% 96%;
     --popover: 240 10% 11%;
     --popover-foreground: 0 0% 96%;
-    --primary: 174 62% 45%;
+    --primary: 271 76% 60%;
     --primary-foreground: 0 0% 100%;
     --secondary: 240 5% 16%;
     --secondary-foreground: 0 0% 90%;
@@ -64,7 +65,7 @@
     --destructive-foreground: 0 0% 100%;
     --border: 240 5% 20%;
     --input: 240 5% 20%;
-    --ring: 174 62% 45%;
+    --ring: 271 76% 60%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -82,6 +83,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: "Nunito", "Golos Text", sans-serif;
+    font-family: "Inter", "Golos Text", system-ui, sans-serif;
   }
 }
