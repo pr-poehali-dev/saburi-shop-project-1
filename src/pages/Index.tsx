@@ -305,43 +305,7 @@ export default function Index() {
         <div className="absolute -bottom-10 -left-10 w-48 h-48 rounded-full bg-amber-200/30 blur-2xl pointer-events-none" />
       </section>
 
-      {/* ── AMBASSADOR BANNER ── */}
-      <section id="about" className="bg-gradient-to-r from-primary to-teal-600 text-white">
-        <div className="container px-4 py-12 grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <p className="text-teal-200 text-xs font-black uppercase tracking-widest mb-3">Наш бренд-амбассадор</p>
-            <h2 className="text-3xl md:text-4xl font-black mb-4 leading-tight">
-              Настоящий Таджикистан<br />в каждой вещи
-            </h2>
-            <p className="text-teal-100 mb-6 max-w-md">
-              Мы с любовью отбираем товары, отражающие традиции и современный стиль нашей страны.
-              Каждая покупка — это частица нашей культуры.
-            </p>
-            <div className="flex flex-wrap gap-6 text-sm">
-              {[['500+', 'Товаров'], ['1 200+', 'Довольных клиентов'], ['3 года', 'На рынке']].map(([n, l]) => (
-                <div key={l}>
-                  <p className="font-black text-2xl">{n}</p>
-                  <p className="text-teal-200">{l}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="flex justify-center md:justify-end">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-72 md:h-72 rounded-3xl overflow-hidden border-4 border-white/30 shadow-2xl">
-                <img
-                  src={SHOP_CONFIG.ambassadorImage}
-                  alt="Бренд-амбассадор Saburi Kids"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-3 -right-3 bg-white rounded-2xl px-3 py-2 shadow-lg">
-                <p className="text-primary font-black text-sm">Saburi Kids ✨</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* ── CATALOG ── */}
       <section id="catalog" className="container px-4 py-14">
