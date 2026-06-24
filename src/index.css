@@ -4,35 +4,36 @@
 
 @layer base {
   :root {
-    --background: 0 0% 97%;
-    --foreground: 0 0% 10%;
+    --background: 36 40% 97%;
+    --foreground: 240 10% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
+    --card-foreground: 240 10% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --popover-foreground: 240 10% 10%;
 
-    --primary: 0 85% 42%;
+    /* Teal — бренд-цвет Saburi Kids */
+    --primary: 174 62% 35%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 94%;
-    --secondary-foreground: 0 0% 15%;
+    --secondary: 36 30% 93%;
+    --secondary-foreground: 240 10% 15%;
 
-    --muted: 0 0% 92%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 36 20% 90%;
+    --muted-foreground: 240 5% 46%;
 
-    --accent: 0 80% 95%;
-    --accent-foreground: 0 85% 40%;
+    --accent: 36 80% 92%;
+    --accent-foreground: 174 62% 28%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 88%;
-    --input: 0 0% 88%;
-    --ring: 0 85% 42%;
+    --border: 36 15% 86%;
+    --input: 36 15% 86%;
+    --ring: 174 62% 35%;
 
-    --radius: 0.25rem;
+    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -45,25 +46,25 @@
   }
 
   .dark {
-    --background: 0 0% 8%;
+    --background: 240 10% 8%;
     --foreground: 0 0% 96%;
-    --card: 0 0% 11%;
+    --card: 240 10% 11%;
     --card-foreground: 0 0% 96%;
-    --popover: 0 0% 11%;
+    --popover: 240 10% 11%;
     --popover-foreground: 0 0% 96%;
-    --primary: 0 85% 50%;
+    --primary: 174 62% 45%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 0 0% 16%;
+    --secondary: 240 5% 16%;
     --secondary-foreground: 0 0% 90%;
-    --muted: 0 0% 16%;
-    --muted-foreground: 0 0% 55%;
-    --accent: 0 0% 16%;
+    --muted: 240 5% 16%;
+    --muted-foreground: 240 5% 55%;
+    --accent: 240 5% 16%;
     --accent-foreground: 0 0% 90%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 100%;
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 0 85% 50%;
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+    --ring: 174 62% 45%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -79,9 +80,8 @@
   * {
     @apply border-border;
   }
-
   body {
     @apply bg-background text-foreground;
-    font-family: "Golos Text", sans-serif;
+    font-family: "Nunito", "Golos Text", sans-serif;
   }
 }
